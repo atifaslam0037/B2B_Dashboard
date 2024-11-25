@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-dashbord">
+            <div class="md-sidebar mb-2">
+                <div class="logo" style="width: 300px">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <div class="closeicon">
+                    <button class="sidebar-togglebtn btn-gray" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        ☰
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel" style="background: #f1f4fb;">
+                        <div class="offcanvas-header">
+                            <div class="logo" style="width:60%">
+                                <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <aside class="main-sidebar" id="sidebar" style="display: block;">
+
+                                <ul class="navBar pt-3">
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="inspectionCriteria.html">
+                                        <li>Inspection criteria</li>
+                                    </a>
+                                    <a href="ValuationSettings.html">
+                                        <li class="active">Valuation Settings</li>
+                                    </a>
+                                    <a href="branches.html">
+                                        <li>Branches</li>
+                                    </a>
+                                    <a href="terms&conditions.html">
+                                        <li>Terms and condition</li>
+                                    </a>
+                                    <a href="logoUpload.html">
+                                        <li>Logo upload</li>
+                                    </a>
+                                </ul>
+                                <div class="logout" style="margin-top: 3rem;">
+                                    <a href="#">Log out</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="main-sidebar" id="sidebar">
+                <div class="logo mb-5">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <ul class="navBar pt-5">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="inspectionCriteria.html">
+                        <li>Inspection criteria</li>
+                    </a>
+                    <a href="ValuationSettings.html">
+                        <li class="active">Valuation Settings</li>
+                    </a>
+                    <a href="branches.html">
+                        <li>Branches</li>
+                    </a>
+                    <a href="terms&conditions.html">
+                        <li>Terms and condition</li>
+                    </a>
+                    <a href="logoUpload.html">
+                        <li>Logo upload</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+            </aside>
+        </div>
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="content-head justify-content-between">
+                    <h1 class="content-title">
+                        Valuation Settings
+                    </h1>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                        <button class="gray-btn">Save changes</button>
+                    </div>
+                </div>
+                <div class="content-nav">
+                    <main>
+                        <input class="content-input" id="tab1" type="radio" name="tabs" checked>
+                        <label class="content-label" for="tab1">Selling</label>
+
+                        <input class="content-input" id="tab2" type="radio" name="tabs">
+                        <label class="content-label" for="tab2">Trade-in</label>
+
+                        <input class="content-input" id="tab3" type="radio" name="tabs">
+                        <label class="content-label" for="tab3">Buying</label>
+
+                        <input class="content-input" id="tab4" type="radio" name="tabs">
+                        <label class="content-label" for="tab4">Auction</label>
+
+                        <input class="content-input" id="tab5" type="radio" name="tabs">
+                        <label class="content-label" for="tab5">Export</label>
+                        <section class="content-section" id="content1">
+                            <h6 class="get-price-title">Select source of Retail transactional value</h6>
+                            <div class="get-price">
+                                <div class="get-price-box">
+                                    <div class="price-checkbox">
+                                        <label class="price-checkbox-container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="price-details">
+                                        <h6>AutoData</h6>
+                                        <p>Some explanation</p>
+                                    </div>
+                                </div>
+                                <div class="get-price-box">
+                                    <div class="price-checkbox">
+                                        <label class="price-checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="price-details">
+                                        <h6>Manul Input</h6>
+                                        <p>Some explanation</p>
+                                    </div>
+                                </div>
+                                <div class="get-price-box">
+                                    <div class="price-checkbox">
+                                        <label class="price-checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="price-details">
+                                        <h6>Other linked valuation based</h6>
+                                        <p>Some explanation</p>
+                                    </div>
+                                    <div class="price-persentage">
+                                        <input type="number" placeholder="15"> <span>%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="adjust-based-title">
+                                Adjust based on
+                            </h6>
+                            <div class="row adjust-detailsRow">
+                                <div class="col-md-6">
+                                    <div class="adjust-detailsBox mx-auto">
+                                        <div class="adjust-details-inner">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="row justify-content-between align-items-center mt-5">
+                                                <div class="col-2">
+                                                    <div class="details-innerBox"></div>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="details-inner-lineBox">
+                                                        <div class="linebox-line"></div>
+                                                        <div class="linebox-details">
+                                                            <p>1700 AED</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-132px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="details-innerSmallBox end"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-90px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="details-innerSmallBox end" style="margin: 0 auto;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-156px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="details-innerSmallBox end"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-between align-items-center mt-1">
+                                                <div class="col-2">
+                                                    <div class="details-innerBox"></div>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="details-inner-lineBox">
+                                                        <div class="linebox-line"></div>
+                                                        <div class="linebox-details">
+                                                            <p>1700 AED</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-132px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="details-innerSmallBox end ms-auto me-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detailsInner-bottomContent mx-0 mt-4">
+                                            <div class="p-0 text-start d-flex align-items-center">
+                                                <div class="price-checkbox text-start">
+                                                    <label class="price-checkbox-container">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ps-0 text-start">
+                                                <p class="bottomContent-text">Appraised value = Retail sales price* -
+                                                    recounditioning cost - your profit margin
+                                                </p>
+                                            </div>
+                                            <div class="pe-0 d-flex justify-content-end align-items-center gap-2">
+                                                <button class="profitMargin-btn">
+                                                    <p>Profit margin</p>
+                                                    <input type="number" placeholder="7.2">
+                                                </button>
+                                                <div id="myDIV"
+                                                    class="aed-btns p-1 d-flex justify-content-center align-items-center">
+                                                    <button class="persentageAED active-aed me-2">%</button>
+                                                    <button class="persentageAED">AED</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="adjust-detailsBox mx-auto">
+                                        <div class="adjust-details-inner">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="row justify-content-between align-items-center mt-5">
+                                                <div class="col-2">
+                                                    <div class="details-innerBox"></div>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="details-inner-lineBox">
+                                                        <div class="persentageLine-title">56%</div>
+                                                        <div class="persentageLine w-134px">
+                                                            <div class="persentageLine-fil" style="width: 56%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-132px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex ">
+                                                        <div class="persentageLine-title">30%</div>
+                                                        <div class="persentageLine w-100">
+                                                            <div class="persentageLine-fil" style="width: 30%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-90px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex ">
+                                                        <div class="persentageLine-title">30%</div>
+                                                        <div class="persentageLine w-100">
+                                                            <div class="persentageLine-fil" style="width: 30%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-156px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex ">
+                                                        <div class="persentageLine-title">30%</div>
+                                                        <div class="persentageLine w-100">
+                                                            <div class="persentageLine-fil" style="width: 30%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-between align-items-center mt-1">
+                                                <div class="col-2">
+                                                    <div class="details-innerBox"></div>
+                                                </div>
+                                                <div class="col-10">
+                                                    <div class="details-inner-lineBox">
+                                                        <div class="persentageLine-title">56%</div>
+                                                        <div class="persentageLine w-134px">
+                                                            <div class="persentageLine-fil" style="width: 56%;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2 px-2">
+                                                <div class="col-2">
+                                                    <div class="details-innerSmallBox"></div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="details-innerSmallBox w-132px"></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="details-innerSmallBox end ms-auto me-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detailsInner-bottomContent mx-0 mt-4">
+                                            <div class="p-0 text-start d-flex align-items-center">
+                                                <div class="price-checkbox text-start">
+                                                    <label class="price-checkbox-container">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ps-0 text-start">
+                                                <p class="bottomContent-text">appraised value = Retail sales price* - %
+                                                    decrease based on condition - your profit margin
+                                                </p>
+                                            </div>
+                                            <div class="pe-0 d-flex justify-content-end align-items-center gap-2">
+                                                <button class="profitMargin-btn">
+                                                    <p>Profit margin</p>
+                                                    <input type="number" placeholder="7.2">
+                                                </button>
+                                                <div id="myDIV"
+                                                    class="aed-btns p-1 d-flex justify-content-center align-items-center">
+                                                    <button class="persentageAED active-aed me-2">%</button>
+                                                    <button class="persentageAED">AED</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="content-section" id="content2">
+                            asdsd
+                        </section>
+                        <section class="content-section" id="content3">
+                        </section>
+                        <section class="content-section" id="content4">
+                        </section>
+                        <section class="content-section" id="content5">
+                        </section>
+                    </main>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', '#myDIV > button', function () {
+                const parent = $(this).parent('#myDIV');
+                console.log(parent)
+                $(parent).find('button').each(function (index, btn) {
+                    if ($(btn).hasClass('active-aed')) {
+                        $(btn).removeClass('active-aed');
+                    } else {
+                        $(btn).addClass('active-aed')
+                    }
+                });
+            });
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

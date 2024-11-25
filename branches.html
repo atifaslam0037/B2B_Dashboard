@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-dashbord">
+            <div class="md-sidebar mb-2">
+                <div class="logo" style="width: 300px">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <div class="closeicon">
+                    <button class="sidebar-togglebtn btn-gray" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        ☰
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel" style="background: #f1f4fb;">
+                        <div class="offcanvas-header">
+                            <div class="logo" style="width:60%">
+                                <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <aside class="main-sidebar" id="sidebar" style="display: block;">
+                                <ul class="navBar pt-3">
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="inspectionCriteria.html">
+                                        <li>Inspection criteria</li>
+                                    </a>
+                                    <a href="ValuationSettings.html">
+                                        <li>Valuation Settings</li>
+                                    </a>
+                                    <a href="branches.html">
+                                        <li class="active">Branches</li>
+                                    </a>
+                                    <a href="terms&conditions.html">
+                                        <li>Terms and condition</li>
+                                    </a>
+                                    <a href="logoUpload.html">
+                                        <li>Logo upload</li>
+                                    </a>
+                                </ul>
+                                <div class="logout" style="margin-top: 3rem;">
+                                    <a href="#">Log out</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="main-sidebar" id="sidebar">
+                <div class="logo mb-5">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <ul class="navBar pt-5">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="inspectionCriteria.html">
+                        <li>Inspection criteria</li>
+                    </a>
+                    <a href="ValuationSettings.html">
+                        <li>Valuation Settings</li>
+                    </a>
+                    <a href="branches.html">
+                        <li class="active">Branches</li>
+                    </a>
+                    <a href="terms&conditions.html">
+                        <li>Terms and condition</li>
+                    </a>
+                    <a href="logoUpload.html">
+                        <li>Logo upload</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+            </aside>
+        </div>
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="content-head justify-content-between">
+                    <h1 class="content-title">
+                        Inspection criteria
+                    </h1>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                        <button type="button" class="blue-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg class="me-2" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6.75H6.75V12H5.25V6.75H0V5.25H5.25V0H6.75V5.25H12V6.75Z" fill="#FCFCFC" />
+                            </svg>
+                            Add new branch
+                        </button>
+                    </div>
+                </div>
+                <div class="branches-table mt-5">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="branchesTable-title">
+                                <th scope="col">Name</th>
+                                <th scope="col">Cite</th>
+                                <th scope="col">contact number</th>
+                                <th scope="col">contact email</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="branchesTable-description">
+                                <td>Dubai Branch</td>
+                                <td>Dubai</td>
+                                <td>0562772882</td>
+                                <td>contact@email.com</td>
+                                <td>
+                                    <div class="edit-delet-btn d-flex justify-content-center gap-2">
+                                        <div class="tooltipbtn">
+                                            <p>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 17.5049L18 17.5049" stroke="#858585" stroke-width="1.5"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15.087 6L15.6173 5.46967C15.4766 5.32902 15.2859 5.25 15.087 5.25C14.888 5.25 14.6973 5.32902 14.5566 5.46967L15.087 6ZM6.47826 14.6087L5.94793 14.0784C5.84323 14.1831 5.77186 14.3164 5.74283 14.4616L6.47826 14.6087ZM6 17L5.26456 16.8529L5.04393 17.9561L6.14709 17.7354L6 17ZM8.3913 16.5217L8.53839 17.2572C8.68358 17.2281 8.81693 17.1568 8.92163 17.0521L8.3913 16.5217ZM17 7.91304L17.5303 8.44337C17.8232 8.15048 17.8232 7.67561 17.5303 7.38271L17 7.91304ZM14.5566 5.46967L5.94793 14.0784L7.00859 15.139L15.6173 6.53033L14.5566 5.46967ZM5.74283 14.4616L5.26456 16.8529L6.73544 17.1471L7.2137 14.7558L5.74283 14.4616ZM6.14709 17.7354L8.53839 17.2572L8.24422 15.7863L5.85291 16.2646L6.14709 17.7354ZM8.92163 17.0521L17.5303 8.44337L16.4697 7.38271L7.86097 15.9914L8.92163 17.0521ZM17.5303 7.38271L15.6173 5.46967L14.5566 6.53033L16.4697 8.44337L17.5303 7.38271Z"
+                                                        fill="#858585" />
+                                                </svg>
+                                            </p>
+                                            <span class="tooltiptext">Edit</span>
+                                        </div>
+                                        <div class="tooltipbtn">
+                                            <p>
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9498 2.05029L2.05027 11.9498" stroke="#858585"
+                                                        stroke-width="1.5" stroke-linecap="square"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M2.05023 2.05029L11.9497 11.9498" stroke="#858585"
+                                                        stroke-width="1.5" stroke-linecap="square"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </p>
+                                            <span class="tooltiptext">Remove</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="branchesTable-description">
+                                <td>Dubai Branch</td>
+                                <td>Dubai</td>
+                                <td>0562772882</td>
+                                <td>contact@email.com</td>
+                                <td>
+                                    <div class="edit-delet-btn d-flex justify-content-center gap-2">
+                                        <div class="tooltipbtn">
+                                            <p>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 17.5049L18 17.5049" stroke="#858585" stroke-width="1.5"
+                                                        stroke-linecap="square" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M15.087 6L15.6173 5.46967C15.4766 5.32902 15.2859 5.25 15.087 5.25C14.888 5.25 14.6973 5.32902 14.5566 5.46967L15.087 6ZM6.47826 14.6087L5.94793 14.0784C5.84323 14.1831 5.77186 14.3164 5.74283 14.4616L6.47826 14.6087ZM6 17L5.26456 16.8529L5.04393 17.9561L6.14709 17.7354L6 17ZM8.3913 16.5217L8.53839 17.2572C8.68358 17.2281 8.81693 17.1568 8.92163 17.0521L8.3913 16.5217ZM17 7.91304L17.5303 8.44337C17.8232 8.15048 17.8232 7.67561 17.5303 7.38271L17 7.91304ZM14.5566 5.46967L5.94793 14.0784L7.00859 15.139L15.6173 6.53033L14.5566 5.46967ZM5.74283 14.4616L5.26456 16.8529L6.73544 17.1471L7.2137 14.7558L5.74283 14.4616ZM6.14709 17.7354L8.53839 17.2572L8.24422 15.7863L5.85291 16.2646L6.14709 17.7354ZM8.92163 17.0521L17.5303 8.44337L16.4697 7.38271L7.86097 15.9914L8.92163 17.0521ZM17.5303 7.38271L15.6173 5.46967L14.5566 6.53033L16.4697 8.44337L17.5303 7.38271Z"
+                                                        fill="#858585" />
+                                                </svg>
+                                            </p>
+                                            <span class="tooltiptext">Edit</span>
+                                        </div>
+                                        <div class="tooltipbtn">
+                                            <p>
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9498 2.05029L2.05027 11.9498" stroke="#858585"
+                                                        stroke-width="1.5" stroke-linecap="square"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M2.05023 2.05029L11.9497 11.9498" stroke="#858585"
+                                                        stroke-width="1.5" stroke-linecap="square"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </p>
+                                            <span class="tooltiptext">Remove</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade mt-5 pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modalTitle">Add new branch</h5>
+                    <div class="modal-form mt-4 ">
+                        <div class="row justify-content-center align-items-center mb-3">
+                            <div class="col-2">
+                                <p class="modalForm-title">
+                                    details
+                                </p>
+                            </div>
+                            <div class="col-5">
+                                <input class="modalForm-input" type="text" placeholder="Name">
+                            </div>
+                            <div class="col-5">
+                                <select class="modalForm-input pe-auto">
+                                    <option selected>City</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-3">
+                            <div class="col-2">
+                                <p class="modalForm-title">
+                                    contact number
+                                </p>
+                            </div>
+                            <div class="col-10">
+                                <input class="modalForm-input" type="text" placeholder="Number">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center mb-3">
+                            <div class="col-2">
+                                <p class="modalForm-title">
+                                    Contact email
+                                </p>
+                            </div>
+                            <div class="col-10">
+                                <input class="modalForm-input" type="text" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="blue-btn">Save changes</button>
+                    <button type="button" class="revert-btn" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

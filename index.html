@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-dashbord">
+            <div class="md-sidebar mb-2">
+                <div class="logo" style="width: 300px">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <div class="closeicon">
+                    <button class="sidebar-togglebtn btn-gray" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        ☰
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel" style="background: #f1f4fb;">
+                        <div class="offcanvas-header">
+                            <div class="logo" style="width:60%">
+                                <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <aside class="main-sidebar" id="sidebar" style="display: block;">
+                                <ul class="navBar pt-3">
+                                    <a href="index.html">
+                                        <li class="active">Home</li>
+                                    </a>
+                                    <a href="inspectionCriteria.html">
+                                        <li>Inspection criteria</li>
+                                    </a>
+                                    <a href="ValuationSettings.html">
+                                        <li>Valuation Settings</li>
+                                    </a>
+                                    <a href="branches.html">
+                                        <li>Branches</li>
+                                    </a>
+                                    <a href="terms&conditions.html">
+                                        <li>Terms and condition</li>
+                                    </a>
+                                    <a href="logoUpload.html">
+                                        <li>Logo upload</li>
+                                    </a>
+                                </ul>
+                                <div class="logout" style="margin-top: 3rem;">
+                                    <a href="#">Log out</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="main-sidebar" id="sidebar">
+                <div class="logo mb-5">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <ul class="navBar pt-5">
+                    <a href="index.html">
+                        <li class="active">Home</li>
+                    </a>
+                    <a href="inspectionCriteria.html">
+                        <li>Inspection criteria</li>
+                    </a>
+                    <a href="ValuationSettings.html">
+                        <li>Valuation Settings</li>
+                    </a>
+                    <a href="branches.html">
+                        <li>Branches</li>
+                    </a>
+                    <a href="terms&conditions.html">
+                        <li>Terms and condition</li>
+                    </a>
+                    <a href="logoUpload.html">
+                        <li>Logo upload</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+            </aside>
+        </div>
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="content-head">
+                    <h1 class="content-title mb-5">
+                        Hi there!
+                    </h1>
+                </div>
+                <div class="inspections-summary mb-5">
+                    <h1 class="content-title">Dashbord</h1>
+                    <p class="summary-title"> 
+                        Here’s a little summary of your inspections</p>
+                    <div class="summary-container">
+                        <div class="summary-box">
+                            <h6 class="box-title">3</h6>
+                            <p class="box-description">
+                                new inspections done this week
+                            </p>
+                        </div>
+                        <div class="summary-box">
+                            <h6 class="box-title">7</h6>
+                            <p class="box-description">
+                                inspections done this month
+                            </p>
+                        </div>
+                        <div class="summary-box">
+                            <h6 class="box-title">x</h6>
+                            <p class="box-description">
+                                if something else
+                            </p>
+                        </div>
+                        <div class="summary-box">
+                            <h6 class="box-title">x</h6>
+                            <p class="box-description">
+                                if something else
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <h5 class="content-details pb-4">
+                    Follow these steps to get started
+                </h5>
+                <div class="details-container">
+                    <div class="details-text">
+                        <p>Upload your company logo. This will be visible on the reports and certificate</p>
+                    </div>
+                    <div class="details-link">
+                        <a href="#">Upload logo</a>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-text">
+                        <p>Review, edit and confirm your terms and conditions. these will be visible on the report.
+                        </p>
+                    </div>
+                    <div class="details-link">
+                        <a href="#">Go to Terms and Conditions</a>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-text">
+                        <p>Specify your branches</p>
+                    </div>
+                    <div class="details-link">
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-text">
+                        <p>Confirm your Inspection criteria</p>
+                    </div>
+                    <div class="details-link">
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-text">
+                        <p>Confirm your Inspection settings</p>
+                    </div>
+                    <div class="details-link">
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

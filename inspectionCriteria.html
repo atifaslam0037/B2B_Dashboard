@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-dashbord">
+            <div class="md-sidebar mb-2">
+                <div class="logo" style="width: 300px">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <div class="closeicon">
+                    <button class="sidebar-togglebtn btn-gray" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        ☰
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel" style="background: #f1f4fb;">
+                        <div class="offcanvas-header">
+                            <div class="logo" style="width:60%">
+                                <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <aside class="main-sidebar" id="sidebar" style="display: block;">
+                                <ul class="navBar pt-3">
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="inspectionCriteria.html">
+                                        <li class="active">Inspection criteria</li>
+                                    </a>
+                                    <a href="ValuationSettings.html">
+                                        <li>Valuation Settings</li>
+                                    </a>
+                                    <a href="branches.html">
+                                        <li>Branches</li>
+                                    </a>
+                                    <a href="terms&conditions.html">
+                                        <li>Terms and condition</li>
+                                    </a>
+                                    <a href="logoUpload.html">
+                                        <li>Logo upload</li>
+                                    </a>
+                                </ul>
+                                <div class="logout" style="margin-top: 3rem;">
+                                    <a href="#">Log out</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="main-sidebar" id="sidebar">
+                <div class="logo mb-5">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <ul class="navBar pt-5">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="inspectionCriteria.html">
+                        <li class="active">Inspection criteria</li>
+                    </a>
+                    <a href="ValuationSettings.html">
+                        <li>Valuation Settings</li>
+                    </a>
+                    <a href="branches.html">
+                        <li>Branches</li>
+                    </a>
+                    <a href="terms&conditions.html">
+                        <li>Terms and condition</li>
+                    </a>
+                    <a href="logoUpload.html">
+                        <li>Logo upload</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+            </aside>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="content-head justify-content-between">
+                    <h1 class="content-title">
+                        Inspection criteria
+                    </h1>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                        <div class="inspection-search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11.0039" cy="11.4004" r="5.25" stroke="#858585" stroke-width="1.5" />
+                                <path d="M15.6055 15.8008L17.998 18.1934" stroke="#858585" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <input type="search" class="search-input" placeholder="Search by keyword">
+                        </div>
+                        <button type="button" class="gray-btn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Save changes</button>
+                    </div>
+                </div>
+                <div class="content-nav">
+                    <main>
+                        <input class="content-input" id="tab1" type="radio" name="tabs" checked>
+                        <label class="content-label" for="tab1">Bodywork
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab2" type="radio" name="tabs">
+                        <label class="content-label" for="tab2">Under bonnet
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab3" type="radio" name="tabs">
+                        <label class="content-label" for="tab3">Interior & controls
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab4" type="radio" name="tabs">
+                        <label class="content-label" for="tab4">Under chassis
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab5" type="radio" name="tabs">
+                        <label class="content-label" for="tab5">Wheels & tyres
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab6" type="radio" name="tabs">
+                        <label class="content-label" for="tab6">Road test
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab7" type="radio" name="tabs">
+                        <label class="content-label" for="tab7">History & traceability
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <input class="content-input" id="tab8" type="radio" name="tabs">
+                        <label class="content-label" for="tab8">Professional photos
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="1.5" fill="#CDCDCD" />
+                                    <path
+                                        d="M2 8L1.46967 7.46968L0.93934 8.00001L1.46967 8.53034L2 8ZM14 8L14.5303 8.53034L15.0607 8.00001L14.5303 7.46968L14 8ZM11.5355 10.4645L11.0052 9.93413L11.5355 10.4645ZM4.46448 10.4645L3.93415 10.9948L4.46448 10.4645ZM11.5355 5.53553L11.0052 6.06586L11.5355 5.53553ZM2.53033 8.53033L4.99479 6.06586L3.93412 5.0052L1.46967 7.46968L2.53033 8.53033ZM11.0052 6.06586L13.4697 8.53033L14.5303 7.46968L12.0659 5.0052L11.0052 6.06586ZM13.4697 7.46967L11.0052 9.93413L12.0658 10.9948L14.5303 8.53034L13.4697 7.46967ZM4.99481 9.93413L2.53033 7.46967L1.46967 8.53034L3.93415 10.9948L4.99481 9.93413ZM11.0052 9.93413C9.34547 11.5938 6.65453 11.5938 4.99481 9.93413L3.93415 10.9948C6.17966 13.2403 9.82034 13.2403 12.0658 10.9948L11.0052 9.93413ZM4.99479 6.06586C6.65452 4.40611 9.34548 4.40611 11.0052 6.06586L12.0659 5.0052C9.82036 2.75967 6.17964 2.75966 3.93412 5.0052L4.99479 6.06586Z"
+                                        fill="#CDCDCD" />
+                                    <path d="M3 13L13 3" stroke="#CDCDCD" stroke-width="1.5" />
+                                </svg>
+                            </span>
+                        </label>
+                        <section class="content-section" id="content1">
+                            <div class="enableDisabal">
+                                <div class="enableDisable-text">
+                                    <h6 class="enableDisabal-title">Disable full section</h6>
+                                    <p class="enableDisabal-description">Note that none of below criteria will be
+                                        evaluated if the full section is disabled</p>
+                                </div>
+                                <div class="enableDisable-btns">
+                                    <button class="disable-btn">Disable</button>
+                                    <button type="button" autofocus class="enable-btn">Enable</button>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row mt-5">
+                                <p class="enablesdisable-rowId">1</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check roof including convertible top (if any)
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">2</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check front bumber and grille
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId disable-color">3</p>
+                                <p class="enabledisable-rowDetail disable-color">
+                                    Check bonnet
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId disable-color">4</p>
+                                <p class="enabledisable-rowDetail disable-color">
+                                    Check front windscreen for cracks, stone chips or damage
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">5</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check front left light unit
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">6</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check rear left view mirror and housing
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">7</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check front left fender
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">8</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check front left door and pillar
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">9</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check front left door window glass
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">10</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check rear left door and pillar
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="enabledisable-row">
+                                <p class="enablesdisable-rowId">11</p>
+                                <p class="enabledisable-rowDetail">
+                                    Check rear left door window glass
+                                </p>
+                                <div class="enabledisable-toggleBtn">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="content-section" id="content2">
+                        </section>
+                        <section class="content-section" id="content3">
+                        </section>
+                        <section class="content-section" id="content4">
+                        </section>
+                        <section class="content-section" id="content5">
+                        </section>
+                        <section class="content-section" id="content6">
+                        </section>
+                        <section class="content-section" id="content7">
+                        </section>
+                        <section class="content-section" id="content8">
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade mt-5 pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5 class="modalTitle">Save changes?</h5>
+                    <p class="modal-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="blue-btn" data-bs-dismiss="modal">Revert changes</button>
+                    <button type="button" class="save-btn">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

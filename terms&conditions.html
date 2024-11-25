@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-dashbord">
+            <div class="md-sidebar mb-2">
+                <div class="logo" style="width: 300px">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <div class="closeicon">
+                    <button class="sidebar-togglebtn btn-gray" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        ☰
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel" style="background: #f1f4fb;">
+                        <div class="offcanvas-header">
+                            <div class="logo" style="width:60%">
+                                <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <aside class="main-sidebar" id="sidebar" style="display: block;">
+                                <ul class="navBar pt-3">
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="inspectionCriteria.html">
+                                        <li>Inspection criteria</li>
+                                    </a>
+                                    <a href="ValuationSettings.html">
+                                        <li>Valuation Settings</li>
+                                    </a>
+                                    <a href="branches.html">
+                                        <li>Branches</li>
+                                    </a>
+                                    <a href="terms&conditions.html">
+                                        <li class="active">Terms and condition</li>
+                                    </a>
+                                    <a href="logoUpload.html">
+                                        <li>Logo upload</li>
+                                    </a>
+                                </ul>
+                                <div class="logout" style="margin-top: 3rem;">
+                                    <a href="#">Log out</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="main-sidebar" id="sidebar">
+                <div class="logo mb-5">
+                    <img src="./assets/imgs/carantee-logo.png" alt="LOGO">
+                </div>
+                <ul class="navBar pt-5">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="inspectionCriteria.html">
+                        <li>Inspection criteria</li>
+                    </a>
+                    <a href="ValuationSettings.html">
+                        <li>Valuation Settings</li>
+                    </a>
+                    <a href="branches.html">
+                        <li>Branches</li>
+                    </a>
+                    <a href="terms&conditions.html">
+                        <li class="active">Terms and condition</li>
+                    </a>
+                    <a href="logoUpload.html">
+                        <li>Logo upload</li>
+                    </a>
+                </ul>
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+            </aside>
+        </div>
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="content-head justify-content-between">
+                    <h1 class="content-title">
+                        Inspection criteria
+                    </h1>
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                        <button type="button" class="revert-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">See in report</button>
+                        <button type="button" class="gray-btn">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+                <textarea class="termsConditions mt-5">
+The vehicle inspection and/or vehicle appraisal have been performed using all reasonable care and expertise. Nevertheless inadvertent errors in both the inspection process and/or the appraisal may occur.
+
+The vehicle inspection is a visual check only of the vehicles condition only for the purpose of assessing the current market value. Dubbizle and its inspection partners do not provide any warranties regarding the final condition or roadworthiness of the vehicle.
+                    
+Dubbizle assesses the value of the vehicle using reasonable skill and care in accordance with best industry practices. In assessing the value Dubbizle retrieves, standardizes, verifies, filters, weights and aggregates value signals from many different sources, which may or may not (always) provide timely, accurate and complete information. Furthermore Dubbizle employs a combination of manual and automated probabilistic modeling to calculate vehicle values. The market values of a vehicle may be influenced by factors that are not (vet) known Dubbizle and that are not (vet) taken into account in the models. All values provided are the informed opinion of Dubbizle only, and cannot be interpreted or construed as advice or guidance.
+                    
+Dubbizle and its inspection partner(s) encourage parties to do their own assessment to confirm the vehicles condition, history and value before committing to any financial or non-financial risk involved with the purchase or provision of a mortgage on the basis of the underlying asset and the credit worthiness of the lender.
+                    
+No rights can be derived from the vehicle inspection and/or the vehicle appraisal.
+                    
+Dubbizle and Its Inspection partner(S) cannot be held llable for any damages, claims, demands suits or losses, including all costs connected therewith, and for any damages which may be asserted, claimed or recovered against arising out of the interpretation and usage of their vehicle inspection and/or assessments.
+                </textarea>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade mt-3" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog terms-modal">
+            <div class="modal-content p-0">
+                <div class="termsModal-head">
+                    <h5 class="m-0 p-0">
+                        Terms and conditions
+                    </h5>
+                    <h4 class="m-0 p-0">15</h4>
+                </div>
+                <div class="termsModal-body">
+                    <div class="termsMOdal-text">
+                        <div class="blue-box">
+                            <img src="./assets/imgs/bluebox.png" height="12" width="12" alt="loading">
+                        </div>
+                        <p>
+                            The vehicle inspection and/or vehicle appraisal have been performed using all reasonable
+                            care and
+                            expertise. Nevertheless inadvertent errors in both the inspection process and/or the
+                            appraisal
+                            may occur.
+                        </p>
+                    </div>
+                    <div class="termsMOdal-text">
+                        <div class="blue-box">
+                            <img src="./assets/imgs/bluebox.png" height="12" width="12" alt="loading">
+                        </div>
+                        <p>
+                            The vehicle inspection and/or vehicle appraisal have been performed using all reasonable
+                            care and
+                            expertise. Nevertheless inadvertent errors in both the inspection process and/or the
+                            appraisal
+                            may occur.
+                        </p>
+                    </div>
+                    <div class="termsMOdal-text">
+                        <div class="blue-box">
+                            <img src="./assets/imgs/bluebox.png" height="12" width="12" alt="loading">
+                        </div>
+                        <p>
+                            The vehicle inspection and/or vehicle appraisal have been performed using all reasonable
+                            care and
+                            expertise. Nevertheless inadvertent errors in both the inspection process and/or the
+                            appraisal
+                            may occur.
+                        </p>
+                    </div>
+                    <div class="termsMOdal-text">
+                        <div class="blue-box">
+                            <img src="./assets/imgs/bluebox.png" height="12" width="12" alt="loading">
+                        </div>
+                        <p>
+                            The vehicle inspection and/or vehicle appraisal have been performed using all reasonable
+                            care and
+                            expertise. Nevertheless inadvertent errors in both the inspection process and/or the
+                            appraisal
+                            may occur.
+                        </p>
+                    </div>
+                    <div class="termsMOdal-text">
+                        <div class="blue-box">
+                            <img src="./assets/imgs/bluebox.png" height="12" width="12" alt="loading">
+                        </div>
+                        <p>
+                            No rights can be derived from the vehicle inspection and/or the vehicle appraisal.
+                        </p>
+                    </div>
+                    <div class="termsMOdal-text">
+                        <div class="blue-box">
+                            <img src="./assets/imgs/bluebox.png" height="12" width="12" alt="loading">
+                        </div>
+                        <p>
+                            Dubbizle and Its Inspection partner(S) cannot be held llable for any damages, claims,
+                            demands
+                            suits or losses, including all costs connected therewith, and for any damages which may be
+                            asserted, claimed or recovered against arising out of the interpretation and usage of their
+                            vehicle inspection and/or assessments.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="termsModal-footer">
+                    <h6 class="my-3 text-center">
+                        Thank you for your trust in our product
+                    </h6>
+                    <div class="termsModal-logo mx-auto">
+                        <img src="./assets/imgs/Your logo.png" alt="loading">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="arrow">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.35181 11.999L1.35398 6.99975L6.35181 2.00049" stroke="#2E2E2E" stroke-width="1.5"
+                            stroke-linecap="square" />
+                    </svg>
+                </div>
+                <p>17 of 17</p>
+                <div class="arrow">
+                    <svg style=" transform: rotateY(180deg);" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.35181 11.999L1.35398 6.99975L6.35181 2.00049" stroke="#2E2E2E" stroke-width="1.5"
+                            stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

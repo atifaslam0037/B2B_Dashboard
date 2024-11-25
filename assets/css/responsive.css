@@ -1,0 +1,118 @@
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+  .wrapper{
+    padding: 2rem;
+  }
+  .sidebar-dashbord {
+    width: 20%;
+  }
+  .content-wrapper {
+    width: 80%;
+  }
+  .details-link a {
+    padding: 5px;
+  }
+  .details-link a:active,
+  .details-link a:hover,
+  .details-link a:focus {
+    padding: 5px;
+  }
+  .detailsInner-bottomContent{
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    display: block;
+    padding: 1rem;
+  }
+  .sidebar-dashbord {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .main-sidebar {
+    display: none;
+  }
+  .md-sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .w-132px,
+  .w-90px,
+  .w-134px,
+  .w-156px{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .content-wrapper .content{
+        padding: 25px 15px 8px;
+    }
+    .inspections-summary{
+        width: auto;
+    }
+  .details-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .details-link{
+    text-align: center;
+  }
+  .get-price{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .adjust-detailsBox{
+    padding: 20px;
+  } 
+}
+@media only screen and (max-width: 765px){
+  .branchesTable-title th,
+  .branchesTable-description td{
+    min-width: 150px;
+  }
+}
+@media only screen and (max-width: 575px){
+    .enableDisabal{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .enableDisable-btns{
+        gap: 10px;
+    }
+    .enabledisable-row{
+        gap: 20px;
+    }
+  .detailsInner-bottomContent{
+    flex-wrap: wrap;
+  }
+
+
+  .sign-in-content{
+    width: auto;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 380px){
+    .details-link a{
+        font-size: 13px;
+    }
+    .summary-container{
+        justify-content: center     ;
+    }
+    .sign-in-content{
+        height: auto;
+    }
+    .inputField{
+        width: auto;
+    }
+}
